@@ -31,9 +31,35 @@ from xml.dom.minidom import ProcessingInstruction
 # for value in multiples:
 #     print(value)
 
-cubes = list(range(1,11))
-for value in cubes:
-    print(value**3)
+# cubes = list(range(1,11))
+# for value in cubes:
+#     print(value**3)
+#
+# cubes = [value**3 for value in range(1,11)]
+# print(cubes)
 
-cubes = [value**3 for value in range(1,11)]
-print(cubes)
+# my_foods = ["chocolate", "Potato", "Carrot", "Pizza","Vanilla"]
+# print('The first three items in the list are:')
+# print(my_foods[:3])
+#
+# print('The three items in the middle of my list are:')
+# print(my_foods[1:4])
+#
+# print('The last three items in the list are:')
+# print(my_foods[-3:])
+#
+#
+my_pizzas = ['pastrami','pepperoni','CBR']
+friend_pizzas = my_pizzas[:]
+
+my_pizzas.append('eggplant')
+friend_pizzas.append('hawaiann')
+#
+# print('my friends favorite pizzas are:')
+# print(friend_pizzas[0:])
+#
+# print('my favorite pizzas are:')
+# print(my_pizzas[:])
+
+for pizza in my_pizzas:
+    print(f"I like to eat {pizza}")
