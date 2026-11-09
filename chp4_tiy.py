@@ -63,3 +63,13 @@ friend_pizzas.append('hawaiann')
 
 for pizza in my_pizzas:
     print(f"I like to eat {pizza}")
+
+buffet_foods = ("chicken","fries","bread","pizza","burger")
+for food in buffet_foods:
+    print(food)
+# buffet_foods.append("ice cream")
+
+buffet_foods = ("chicken", "chocolate", "foccacia", "pizza", "burger")
+print("\nNew Menu")
+for food in buffet_foods:
+    print(food)
