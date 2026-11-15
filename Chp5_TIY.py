@@ -70,31 +70,67 @@
 # elif alien_color == 'red':
 #     print("You just earned 15 points")
 
-age = 66
+# age = 66
+#
+# if age < 2:
+#     print('This person is a baby')
+# elif age < 4 and age >= 2:
+#     print('This person is a toddler')
+# elif age < 13 and age >= 4:
+#     print('This person is a kid')
+# elif age < 20 and age >= 13:
+#     print('This person is a teenager')
+# elif age < 65 and age >= 20:
+#     print('This person is an adult')
+# else:
+#     print('This person is an elder')
+#
+# favorite_fruits = ['Mangosteen','Orange','Apple','Blueberry','Blackberry']
+# if 'Mangosteen' in favorite_fruits:
+#     print("I love mangosteen.")
+# if 'Orange' in favorite_fruits:
+#     print("I love Oranges.")
+# if 'Strawberry' in favorite_fruits:
+#     print("I love Strawberry.")
+# if 'Bananna' in favorite_fruits:
+#     print('I love banannas.')
+# if 'raspberry' in favorite_fruits:
+#     print('I love raspberry')
+# if 'Apple' in favorite_fruits:
+#     print('I Love apples')
 
-if age < 2:
-    print('This person is a baby')
-elif age < 4 and age >= 2:
-    print('This person is a toddler')
-elif age < 13 and age >= 4:
-    print('This person is a kid')
-elif age < 20 and age >= 13:
-    print('This person is a teenager')
-elif age < 65 and age >= 20:
-    print('This person is an adult')
-else:
-    print('This person is an elder')
+# user_names = ['Jimmy','Todd','John','admin','jake']
+# for name in user_names:
+#     if name == 'admin':
+#         print("Hello admin, would you like to see a report?")
+#     else:
+#         print(f"Hello {name}, thank you for logging in.")
 
-favorite_fruits = ['Mangosteen','Orange','Apple','Blueberry','Blackberry']
-if 'Mangosteen' in favorite_fruits:
-    print("I love mangosteen.")
-if 'Orange' in favorite_fruits:
-    print("I love Oranges.")
-if 'Strawberry' in favorite_fruits:
-    print("I love Strawberry.")
-if 'Bananna' in favorite_fruits:
-    print('I love banannas.')
-if 'raspberry' in favorite_fruits:
-    print('I love raspberry')
-if 'Apple' in favorite_fruits:
-    print('I Love apples')
+# user_names = []
+# if user_names:
+#     for name in user_names:
+#         print(f"Hello {name}, would you like to see a report?")
+# else:
+#     print(f"We need to find some users!")
+
+# current_users = ['Jimmy','Todd','John','admin','jake']
+# new_users = ['Jack','Jane','Thomas','Carlos','jake','Jimmy']
+#
+# if new_users:
+#     for user in new_users:
+#         if user in current_users:
+#             print(f"{user}, you need a new username")
+#         else:
+#             print(f"Welcome to the webpage, {user}")
+
+numbers = [1,2,3,4,5,6,7,8,9]
+for number in numbers:
+    if number == 1:
+        print(f"{number}st")
+    elif number == 2:
+        print(f"{number}nd")
+    elif number == 3:
+        print(f"{number}rd")
+    else:
+        print(f"{number}th")
+
