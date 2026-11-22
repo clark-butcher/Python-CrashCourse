@@ -1,8 +1,8 @@
-favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c',
-    'edward': 'ruby',
-    'phil': 'python'}
+# favorite_languages = {
+#     'jen': 'python',
+#     'sarah': 'c',
+#     'edward': 'ruby',
+#     'phil': 'python'}
 
 # language = favorite_languages['sarah'].title()
 # print(f"Sarah's favorite language is {language}.")
@@ -22,13 +22,24 @@ favorite_languages = {
 #
 # if 'erin' not in favorite_languages.keys():
 #     print(f"Erin, please take our poll")
+#
+# for name in sorted(favorite_languages.keys()):
+#     print(f"{name.title()}, thank you for taking our poll")
+#
+# print("The following languages have been mentioned:")
+# for language in sorted(favorite_languages.values()):
+#     print(language.title())
+#
+# for language in set(favorite_languages.values()):
+#     print(language.title())
 
-for name in sorted(favorite_languages.keys()):
-    print(f"{name.title()}, thank you for taking our poll")
-
-print("The following languages have been mentioned:")
-for language in sorted(favorite_languages.values()):
-    print(language.title())
-
-for language in set(favorite_languages.values()):
-    print(language.title())
+favorite_languages = {
+    'jen': ['python','ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby','go'],
+    'phil': ['python','haskell'],
+    }
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    for language in languages:
+        print(f"\t{language.title()}")
