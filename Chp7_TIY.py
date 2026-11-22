@@ -65,3 +65,39 @@
 # while x < 10:
 #     print("please stop this")
 
+# sandwich_orders = ['pastrami','tuna','pastrami','beef','pastrami','corned beef','radish']
+# finished_sandwiches=[]
+#
+# while 'pastrami' in sandwich_orders:
+#     print('We are out of pastrami. Please pick another sandwich')
+#     sandwich_orders.remove('pastrami')
+#     sandwich_order_new = input("Which sandwich do you want?")
+#     sandwich_orders.append(sandwich_order_new)
+#
+# while sandwich_orders:
+#     in_progress_order = sandwich_orders.pop()
+#
+#     print(f"Making your {in_progress_order} sandwich")
+#     finished_sandwiches.append(in_progress_order)
+#
+# print(f"\nThe following sandwiches have been made:")
+# for finished_sandwich in finished_sandwiches:
+#     print(finished_sandwich.title())
+
+responses = {}
+
+polling_active = True
+
+while polling_active:
+    name = input(f"\nWhat is your name")
+    response = input(f"\nWhat is your dream vacation?")
+
+    responses[name] = response
+
+    repeat = input("Would anyone else like to answer")
+    if repeat == 'no':
+        polling_active = False
+
+print("\n---Poll Results---")
+for name,response in responses.items():
+    print(f"{name}'s dream vacation is {response}")
