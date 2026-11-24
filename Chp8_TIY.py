@@ -62,9 +62,7 @@ from pydoc import describe
 # texts = ['hello','nice to meet you','what is up']
 # show_messages(texts)
 
-
-
-def send_messages(text):
+def send_messages(texts):
     while texts:
         in_prog = texts.pop()
         print(f"{in_prog}")
