@@ -62,17 +62,41 @@ from pydoc import describe
 # texts = ['hello','nice to meet you','what is up']
 # show_messages(texts)
 
-def send_messages(texts):
-    while texts:
-        in_prog = texts.pop()
-        print(f"{in_prog}")
-        sent_messages.append(in_prog)
+# def send_messages(texts):
+#     while texts:
+#         in_prog = texts.pop()
+#         print(f"{in_prog}")
+#         sent_messages.append(in_prog)
+#
+# texts = ['hello','nice to meet you','what is up']
+# sent_messages = []
+#
+# send_messages(texts[:])
+#
+# print(texts)
+# print(sent_messages)
 
-texts = ['hello','nice to meet you','what is up']
-sent_messages = []
+# def sandwich_orders(*fillings):
+#     print(fillings)
+# sandwich_orders('tomato','mozarella')
+# sandwich_orders('spinach','lettuce','cheese','meat')
+# sandwich_orders('egg','rice')
 
-send_messages(texts[:])
+# def build_profile(first,last,**user_info):
+#     user_info['first_name']=first
+#     user_info['last_name']=last
+#     return user_info
+# user_profile = build_profile('jon','jackson',
+#                              hair ='brown',
+#                              height ='7 feet',
+#                              weight = '180 lbs')
+# print(user_profile)
 
-print(texts)
-print(sent_messages)
+# def car_profile(make,color,**car_info):
+#     car_info['make'] = make
+#     car_info['color'] = color
+#     return car_info
+#
+# car = car_profile('subaru','blue',doors=4,screen=True)
+# print(car)
 
