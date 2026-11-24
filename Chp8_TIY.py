@@ -42,13 +42,39 @@ from pydoc import describe
 # print(info)
 # info = make_album('Beatles','Let It Be')
 # print(info)
+#
+# def make_album(artist,album_title,song_number=None):
+#     album = {'artist':artist,'album title':album_title}
+#     return album
+#
+# while True:
+#     artist = input("Who made the album?")
+#     album_title = input("What is the title of the album?")
+#     info = make_album(artist, album_title)
+#     print(info)
 
-def make_album(artist,album_title,song_number=None):
-    album = {'artist':artist,'album title':album_title}
-    return album
 
-while True:
-    artist = input("Who made the album?")
-    album_title = input("What is the title of the album?")
-    info = make_album(artist, album_title)
-    print(info)
+
+# def show_messages(text):
+#     for text in texts:
+#         print(text)
+#
+# texts = ['hello','nice to meet you','what is up']
+# show_messages(texts)
+
+
+
+def send_messages(text):
+    while texts:
+        in_prog = texts.pop()
+        print(f"{in_prog}")
+        sent_messages.append(in_prog)
+
+texts = ['hello','nice to meet you','what is up']
+sent_messages = []
+
+send_messages(texts[:])
+
+print(texts)
+print(sent_messages)
+
