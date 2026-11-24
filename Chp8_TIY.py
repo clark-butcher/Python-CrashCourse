@@ -100,3 +100,29 @@ from pydoc import describe
 # car = car_profile('subaru','blue',doors=4,screen=True)
 # print(car)
 
+# from Chp8_printing_models import print_models, complete_models
+# unprinted_designs = ['phone case','robot pendant','dodecahedron']
+# completed_models = []
+#
+# print_models(unprinted_designs,completed_models)
+# complete_models(completed_models)
+
+# from Chp8_person import build_person
+# person = build_person('jon','brown',17)
+# print(person)
+
+# from Chp8_person import *
+# person = build_person('jon','brown',17)
+# print(person)
+#
+# from Chp8_person import build_person as p
+# person = p('jon','brown',17)
+# print(person)
+
+# import Chp8_person as p
+# person = p.build_person('jon','brown',17)
+# print(person)
+#
+# import Chp8_person
+# person = Chp8_person.build_person('jon','brown',17)
+# print(person)
